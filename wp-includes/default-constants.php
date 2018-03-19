@@ -361,6 +361,10 @@ function wp_functionality_constants() {
 	if ( ! defined( 'WP_CRON_LOCK_TIMEOUT' ) ) {
 		define( 'WP_CRON_LOCK_TIMEOUT', 60 );  // In seconds
 	}
+	
+	if ( ! defined( 'WP_HTTP_BLOCK_EXTERNAL' ) ) {
+		define( 'WP_HTTP_BLOCK_EXTERNAL', true ); // Block all external by default
+	}
 }
 
 /**
